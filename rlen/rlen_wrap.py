@@ -36,7 +36,7 @@ def RLenc_python(img, order='F', format=True):
         r = 0
 
     if format:
-        list2txt(runs)
+        return list2txt(runs)
     else:
         return runs
 
