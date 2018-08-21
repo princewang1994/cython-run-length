@@ -1,36 +1,33 @@
 # A Cython implement run-length
 
-In some segmentation tasks in [Kaggle](), it will use `run length` endoding on pixel values for compressing prediction files. Both TGS and [DSB]() use this standard.  It is a greate idea to use  python implement in some {Kaggle Kernels](), such as https://www.kaggle.com/bguberfain/unet-with-depth. But as the number of testing data growing larger, these python codes will become bottleneck of your system, which slow down your submisson. Here is a cython accelerated mask-to-runlength code. Hope it will help Kagglers.
+In some segmentation tasks in [Kaggle](), it will use `run length` endoding on pixel values for compressing prediction files. Both TGS and [DSB]() use this standard.  It is a greate idea to use  python implement in some {Kaggle Kernels](), such as [unet-with-depth](https://www.kaggle.com/bguberfain/unet-with-depth). But as the number of testing data growing larger, these python codes will become bottleneck of your system, which slow down your submisson. Here is a cython accelerated mask-to-runlength code. Hope it will help Kagglers.
 
 ## Getting Started
 
-
+Clone this repository:
+```
+git clone https://github.com/princewang1994/cython-run-length.git
+```
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+For using this code, it need some python packages, run following command to install dependencies. 
 
 ```
-Give examples
+$ pip install -r requirements.txt
 ```
 
-### Installing
+### Compile
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Cython implement code need compile with setup.py, run `make` to build:
 
 ```
-Give the example
+$ make
 ```
 
-And repeat
+### Convert your prediction
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+You can use `from `
 
 ## Running the tests
 

@@ -3,5 +3,6 @@ all:
 	python setup.py build_ext --inplace
 
 clean:
-	- rm *.so
+	- python setup.py clean
+	- rm *.so rlen.c
 	- rm -rf build/
