@@ -47,7 +47,7 @@ def make_submission(preds, names, fast=True, path='submission.csv')
 
 `test_rlen.py` is an example of using `make_submission`, before testing it, make sure that `tqdm` and `pandas` is install again. Then it need a `train.pkl`, you can download form https://drive.google.com/file/d/1op6WD4X91uWqf-FLI7b7X0AQNV2wGyC6/view?usp=sharing
 
-**Attention: for using this train.pkl, make sure using python3, or you should make your own pickle following tgs_pkl.ipynb** 
+**Attention: for using this train.pkl, make sure using python3, or you should make your own pickle following tgs_pickle.ipynb** 
 
 - run `test_rlen.py`, it will generate `slow_submission.csv` and `fast_submission.csv`, see that fast version accelerates it near 200 times.
 
@@ -71,7 +71,7 @@ diff slow_submission.csv fast_submission.csv
 
 if there is no output, done.
 
-## Authors
+## Author
 
 * **Prince Wang**: http://blog.prince2015.club
 * **Github**: https://github.com/princewang1994
