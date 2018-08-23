@@ -1,6 +1,6 @@
-import rlen as rlen
 import numpy as np
 import pandas as pd
+from .rlen import RLenc as fast_rlenc
 from tqdm import tqdm
 
 
@@ -44,7 +44,7 @@ def RLenc_cython(img, order='F', format=True):
 
     img = img.reshape(-1, order=order).astype(np.int32)
     # Cython accelerate RLenc
-    res = rlen.RLenc(img)
+    res = fast_rlenc(img)
     if format:
         return list2txt(res)
     else:
