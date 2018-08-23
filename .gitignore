@@ -1,5 +1,7 @@
 build/
+rlen.c
 *.so
 *.pyc
 __pycache__
-rlen.c
+*.pkl
+*.csv
