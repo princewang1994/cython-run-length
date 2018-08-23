@@ -60,7 +60,6 @@ Done.
 100%|████████████████████████████████████████████████████| 4000/4000 [00:51<00:00, 77.36it/s]
 Exporting to slow_submission.csv.
 Done.
-$ 
 ```
 
 - Then test whether they have the same contents:
